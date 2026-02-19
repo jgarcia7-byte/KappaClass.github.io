@@ -2,6 +2,7 @@ const pnms = [
   {
     name: "Lucas Cariquitan",
     hometown: "San Diego, CA",
+    coords: [32.7157, 117.1611], // [Latitude, Longitude]
     major: "MECH",
     gradYear: "2029",
     favMusic: "Tyler the Creator",
@@ -23,6 +24,7 @@ const pnms = [
   {
     name: "Brooke Bague",
     hometown: "Santa Clarita, CA",
+    coords: [34.39, 118.54], // [Latitude, Longitude]
     major: "CENG",
     gradYear: "2029",
     favMusic: "The Marias",
