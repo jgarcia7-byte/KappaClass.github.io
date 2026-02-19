@@ -2,6 +2,7 @@ function sayHello() {
   alert("Welcome to the PNM Class Website!");
 }
 
+//This part of the is for the Fidn Your Twin Section
 function findTwin() {
   const userAnswers = {
     snack: document.getElementById("snack").value,
