@@ -7,8 +7,8 @@
 
 <body>
 
-  <h1>Welcome to the PNM Class Website</h1>
-  <p>This website showcases our PNM class!</p>
+  <h1>Welcome to the Kappa Class Website</h1>
+  <p>This website will showcase our PNM's!</p>
 
   <img src="images/sample.jpg" alt="Sample Photo" width="200">
 
@@ -17,3 +17,68 @@
   <script src="script.js"></script>
 </body>
 </html>
+
+<!-- This part of the code is for the Twin section only of the website -->
+<h2>Find Your Twin</h2>
+
+<div id="quiz">
+
+  <p>Favorite snack type?</p>
+  <select id="snack">
+    <option>Sweet</option>
+    <option>Salty</option>
+    <option>Both</option>
+    <option>Whatever is there</option>
+  </select>
+
+  <p>If there's free food, what are you?</p>
+  <select id="freeFood">
+    <option>First in line</option>
+    <option>Non chalant walk over</option>
+    <option>Take extra for later</option>
+    <option>Im not even that hungry</option>
+  </select>
+
+  <p>Favorite season?</p>
+  <select id="season">
+    <option>Summer</option>
+    <option>Winter</option>
+    <option>Fall</option>
+    <option>Spring</option>
+  </select>
+
+  <p>What is your lifestyle?</p>
+  <select id="lifestyle">
+    <option>Going Out</option>
+    <option>Staying In</option>
+    <option>Adventure / Exploring</option>
+  </select>
+
+  <p>How do you handle stress?</p>
+  <select id="stress">
+    <option>Gym / Activity</option>
+    <option>Sleep</option>
+    <option>Talk with friends or family</option>
+    <option>Lock in</option>
+  </select>
+
+  <p>Who or what is your biggest motivation?</p>
+  <select id="motivation">
+    <option>Success</option>
+    <option>Family</option>
+    <option>Fun / Experiences</option>
+    <option>Personal Growth</option>
+  </select>
+
+  <p>What describes you the most?</p>
+  <select id="personality">
+    <option>Loyal</option>
+    <option>Funny</option>
+    <option>Trustworthy</option>
+    <option>Ambitious</option>
+
+  <br><br>
+  <button onclick="findTwin()">Find My Twin</button>
+</div>
+
+<h3 id="result"></h3>
