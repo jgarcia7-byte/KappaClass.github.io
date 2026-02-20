@@ -1,4 +1,4 @@
-const pnms = [
+const pnm = [
   {
     name: "Lucas Cariquitan",
     hometown: "San Diego, CA",
