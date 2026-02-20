@@ -1,8 +1,12 @@
 const pnm = [
   {
     name: "Lucas Cariquitan",
-    hometown: "San Diego, CA",
-    coords: [32.7157, 117.1611], // [Latitude, Longitude]
+    hometown: {
+      city: "San Diego, ",
+      state: "CA",
+      lat: 32.7157,
+      lng: -117.1611
+    },
     major: "MECH",
     gradYear: "2029",
     themeSong: "https://www.youtube.com/watch?v=dqUdI4AIDF0",
@@ -24,8 +28,12 @@ const pnm = [
 
   {
     name: "Brooke Bague",
-    hometown: "Santa Clarita, CA",
-    coords: [34.39, 118.54], // [Latitude, Longitude]
+    hometown: {
+      city: "Santa Clarita, ",
+      state: "CA",
+      lat: 34.3917,
+      lng: -118.5426
+    },
     major: "CENG",
     gradYear: "2029",
     themeSong: "https://www.youtube.com/watch?v=9f5zD7ZSNpQ&list=RD9f5zD7ZSNpQ&start_radio=1",
@@ -47,8 +55,12 @@ const pnm = [
 
   {
     name: "Ethan Pessoa Jinian",
-    hometown: "San Francisco, CA",
-    coords: [37.77, 122.42], // [Latitude, Longitude]
+    hometown: {
+      city: "San Francisco, ",
+      state: "CA",
+      lat: 37.7749,
+      lng: -122.4194
+    },
     major: "MECH",
     gradYear: "2029",
     themeSong: "https://www.youtube.com/watch?v=VlTEQ4p2xDM&list=RDVlTEQ4p2xDM&start_radio=1",
@@ -70,8 +82,12 @@ const pnm = [
 
   {
     name: "Colin Esperanza",
-    hometown: "Napa, CA",
-    coords: [38.3, 122.29], // [Latitude, Longitude]
+    hometown: {
+      city: "Napa, ",
+      state: "Ca",
+      lat: 38.2975,
+      lng: -122.2869
+    },
     major: "CSEN",
     gradYear: "2028",
     themeSong: "https://www.youtube.com/watch?v=iGbeZNqklic&list=RDiGbeZNqklic&rco=1",
@@ -93,8 +109,12 @@ const pnm = [
 
   {
     name: "Lyra Kapadia",
-    hometown: "San Ramon, CA",
-    coords: [37.78, 121.98], // [Latitude, Longitude]
+    hometown: {
+      city: "San Ramon",
+      state: "California",
+      lat: 37.7799,
+      lng: -121.9780
+    },
     major: "ECEN",
     gradYear: "2029",
     themeSong: "N/A",
@@ -116,8 +136,12 @@ const pnm = [
 
   {
     name: "Sarah Gupte",
-    hometown: "Pleasanton, CA",
-    coords: [37.66, 121.88], // [Latitude, Longitude]
+    hometown: {
+      city: "Pleasanton",
+      state: "California",
+      lat: 37.6624,
+      lng: -121.8747
+    },
     major: "CSEN",
     gradYear: "2028",
     themeSong: "https://www.youtube.com/watch?v=RSsTx2TBrww&list=RDRSsTx2TBrww&start_radio=1",
@@ -139,8 +163,12 @@ const pnm = [
 
     {
     name: "Astha Desai",
-    hometown: "Fremont, CA",
-    coords: [37.55, 121.99], // [Latitude, Longitude]
+      hometown: {
+        city: "Fremont",
+        state: "California",
+        lat: 37.5483,
+        lng: -121.9886
+      },
     major: "CSEN",
     gradYear: "2028",
     themeSong: "https://www.youtube.com/watch?v=19VAnMSf6o0&list=RD19VAnMSf6o0&start_radio=1",
@@ -162,8 +190,12 @@ const pnm = [
 
   {
     name: "Amy Vu",
-    hometown: "San Jose, CA",
-    coords: [37.3387, 121.8853], // [Latitude, Longitude]
+    hometown: {
+      city: "San Jose, ",
+      state: "CA",
+      lat: 37.3382,
+      lng: -121.8863,
+    },
     major: "CSEN",
     gradYear: "2029",
     themeSong: "https://www.youtube.com/watch?v=-xoxu1zHiSY&list=RD-xoxu1zHiSY&start_radio=1",
@@ -185,8 +217,12 @@ const pnm = [
 
   {
     name: "Marisol Roeck",
-    hometown: "Lake Forest, IL",
-    coords: [42.26, 87.84], // [Latitude, Longitude]
+    hometown: {
+      city: "Lake Forest",
+      state: "Illinois",
+      lat: 42.2589,
+      lng: -87.8406
+    },
     major: "MECH",
     gradYear: "2029",
     themeSong: "https://www.youtube.com/watch?v=5igDtWadYms&list=RD5igDtWadYms&start_radio=1",
@@ -208,8 +244,12 @@ const pnm = [
 
   {
     name: "Daniela Diaz",
-    hometown: "San Jose, CA",
-    coords: [37.3387, 121.8853], // [Latitude, Longitude]
+    hometown: {
+      city: "San Jose, ",
+      state: "CA",
+      lat: 37.3382,
+      lng: -121.8863,
+    },
     major: "WDE",
     gradYear: "2028",
     themeSong: "https://www.youtube.com/watch?v=-HLGCKkDoPw&list=RD-HLGCKkDoPw&start_radio=1",
@@ -231,8 +271,12 @@ const pnm = [
 
   {
     name: "Zoe Costianis",
-    hometown: "Glenview, IL",
-    coords: [42.0746, -87.8116], // [Latitude, Longitude]
+    hometown: {
+      city: "Glenview, ",
+      state: "IL",
+      lat: 42.0698,
+      lng: -87.7878
+    },
     major: "BIOE",
     gradYear: "2028",
     themeSong: "https://www.youtube.com/watch?v=RB-RcX5DS5A&list=RDRB-RcX5DS5A&start_radio=1",
@@ -254,8 +298,12 @@ const pnm = [
 
   {
     name: "Mia Buccino",
-    hometown: "Covina, CA",
-    coords: [34.09, -117.89], // [Latitude, Longitude]
+    hometown: {
+      city: "Covina, ",
+      state: "CA",
+      lat: 34.09,
+      lng: -117.89,
+    },
     major: "ENGRUD",
     gradYear: "2029",
     themeSong: "https://www.youtube.com/watch?v=yZE937z9e9g&list=RDyZE937z9e9g&start_radio=1",
@@ -277,8 +325,12 @@ const pnm = [
 
   {
     name: "Jaden Tran",
-    hometown: "San Jose, CA",
-    coords: [37.3387, 121.8853], // [Latitude, Longitude]
+    hometown: {
+      city: "San Jose, ",
+      state: "CA",
+      lat: 37.3382,
+      lng: -121.8863,
+    },
     major: "ECEN",
     gradYear: "2028",
     themeSong: "https://www.youtube.com/watch?v=4uFalk1y38I&list=RD4uFalk1y38I&start_radio=1",
@@ -300,8 +352,12 @@ const pnm = [
 
   {
     name: "Jonathan Garcia",
-    hometown: "San Jose, CA",
-    coords: [37.3387, 121.8853], // [Latitude, Longitude]
+    hometown: {
+      city: "San Jose, ",
+      state: "CA",
+      lat: 37.3382,
+      lng: -121.8863,
+    },
     major: "ECEN",
     gradYear: "2028",
     themeSong: "https://www.youtube.com/watch?v=pildU9lK6vM",
