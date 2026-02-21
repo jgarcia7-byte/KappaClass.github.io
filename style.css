@@ -1,18 +1,121 @@
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
 body {
   font-family: Arial, sans-serif;
+  background-color: #800020;
+  color: #FFD700;
+  line-height: 1.6;
   text-align: center;
-  background-color: #f4f4f4;
 }
 
-h1 {
-  color: navy;
-}
+.container { max-width: 1000px; margin: 0 auto; padding: 0 20px; }
+
+h1 { font-size: 2.25rem; margin: 2rem 0 0.5rem; color: #FFD700; }
+h2 { font-size: 1.75rem; margin: 2.5rem 0 1rem; color: #FFD700; }
+p { color: #FFD700; margin-bottom: 1rem; }
 
 button {
-  padding: 10px 20px;
-  font-size: 16px;
-  background-color: navy;
-  color: white;
-  border: none;
-  border-radius: 5px;
+  background-color: #800020;
+  color: #FFD700;
+  border: 2px solid #FFD700;
+  padding: 0.6rem 1rem;
+  font-size: 1rem;
+  font-weight: 700;
+  cursor: pointer;
+  border-radius: 6px;
+}
+
+button:hover { background-color: #600018; color: white; }
+
+img { max-width: 100%; height: auto; }
+
+/* Map */
+#map {
+  width: 100%;
+  max-width: 1000px;
+  margin: 1.5rem auto 0;
+  border: 2px solid #FFD700;
+  border-radius: 8px;
+  overflow: hidden;
+  background: white;
+}
+
+/* Profiles */
+#profilesGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 1.25rem;
+  max-width: 1000px;
+  margin: 2rem auto 0;
+  padding: 0 20px;
+}
+
+.profile-card {
+  background: white;
+  border: 2px solid #FFD700;
+  padding: 1.25rem;
+  text-align: center;
+  border-radius: 10px;
+}
+
+.profile-image {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  margin: 0 auto 1rem;
+  display: block;
+}
+
+.profile-name {
+  font-size: 1.2rem;
+  font-weight: 800;
+  color: #800020;
+  margin-bottom: 0.25rem;
+}
+
+.profile-info { color: #333; margin: 0.35rem 0; text-align: left; }
+
+.profile-theme-song { margin-top: 1rem; padding-top: 1rem; border-top: 1px solid #ddd; }
+
+.play-btn { padding: 0.45rem 0.85rem; font-size: 0.9rem; }
+
+/* Find Your Twin */
+#quiz {
+  max-width: 600px;
+  margin: 2rem auto 0;
+  background: white;
+  padding: 1.5rem;
+  border: 2px solid #FFD700;
+  border-radius: 10px;
+  text-align: left;
+}
+
+#quiz p { margin: 1rem 0 0.4rem; color: #800020; font-weight: 700; }
+
+#quiz select {
+  width: 100%;
+  padding: 0.6rem;
+  border: 2px solid #800020;
+  font-size: 1rem;
+  border-radius: 6px;
+  background: white;
+}
+
+#quiz button { width: 100%; margin-top: 1.25rem; }
+
+#result {
+  max-width: 600px;
+  margin: 1.5rem auto 3rem;
+  background: white;
+  padding: 1.25rem;
+  border: 2px solid #FFD700;
+  border-radius: 10px;
+  min-height: 60px;
+  color: #333;
+}
+
+@media (max-width: 768px) {
+  h1 { font-size: 1.9rem; }
+  #map { border-radius: 6px; }
+  #profilesGrid { grid-template-columns: 1fr; }
 }

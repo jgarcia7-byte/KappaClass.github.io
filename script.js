@@ -4,21 +4,19 @@ let markers = [];
 document.addEventListener('DOMContentLoaded', function() {
     initializeMap();
     displayProfiles();
-    setupTwinFinder();
-    setupMusicPlayer();
 });
 
 // This section is for the map part of the website
 function initializeMap() {
-    // Creates a map centered on the USA
-    map = L.map('worldMap').setView([39.8283, -98.5795], 4);
-  
-    // Add markers for each PNM's hometown
+    map = L.map('map').setView([39.8283, -98.5795], 4);
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+    }).addTo(map);
     pnmData.forEach(pnm => {
         if (pnm.hometown && pnm.hometown.lat && pnm.hometown.lng) {
             const marker = L.marker([pnm.hometown.lat, pnm.hometown.lng])
                 .addTo(map)
-                .bindPopup(`<b>${pnm.firstName} ${pnm.lastName}</b><br>${pnm.hometown.city}, ${pnm.hometown.state}`);
+                .bindPopup(`<b>${pnm.name}</b><br>${pnm.hometown.city} ${pnm.hometown.state}`);
             markers.push(marker);
         }
     });
@@ -34,6 +32,7 @@ function initializeMap() {
 // Display profile cards
 function displayProfiles() {
     const profilesGrid = document.getElementById('profilesGrid');
+    if (!profilesGrid) return;
     profilesGrid.innerHTML = '';
 
     pnmData.forEach(pnm => {
@@ -66,15 +65,15 @@ function createProfileCard(pnm) {
     }
 
     // Graduation year
-    if (pnm.graduationYear) {
-        html += `<p class="profile-info"><strong>Graduation:</strong> ${pnm.graduationYear}</p>`;
+    if (pnm.gradYear) {
+        html += `<p class="profile-info"><strong>Graduation:</strong> ${pnm.gradYear}</p>`;
     }
 
     // Theme song
     if (pnm.themeSong) {
         html += `<div class="profile-theme-song">
             <button onclick="playThemeSong('${pnm.name}', '${pnm.themeSong}')" class="play-btn">
-                ▶️ Play Theme Song
+                Play Theme Song
             </button>
         </div>`;
     }
@@ -97,18 +96,20 @@ function findTwin() {
   let bestMatch = null;
   let highestScore = -1;
 
-  pnms.forEach(pnm => {
+  pnmData.forEach(pnm => {
     let score = 0;
-
     if (pnm.twinAnswers.snack === userAnswers.snack) score++;
     if (pnm.twinAnswers.freeFood === userAnswers.freeFood) score++;
     if (pnm.twinAnswers.season === userAnswers.season) score++;
-
     if (score > highestScore) {
       highestScore = score;
       bestMatch = pnm;
     }
   });
+  const loc = bestMatch.hometown ? bestMatch.hometown.city + " " + bestMatch.hometown.state : "";
+  document.getElementById("result").innerHTML = "Your Twin is <b>" + bestMatch.name + "</b>" + (loc ? " from " + loc : "") + ".";
+}
 
-  document.getElementById("result").innerHTML = "Your Twin is <b>" + bestMatch.name + "</b> from " + bestMatch.hometown;
+function playThemeSong(name, url) {
+  window.open(url, "_blank");
 }

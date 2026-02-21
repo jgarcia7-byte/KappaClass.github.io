@@ -2,90 +2,84 @@
 <html>
 <head>
   <title>PNM Class Website</title>
+  <link rel="stylesheet" href="style.css" />
   <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
   <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
 </head>
 
 <body>
-
   <h1>Welcome to the Kappa Class Website</h1>
   <p>This website will showcase our PNM's!</p>
 
-  <!--  -->
+  <h2>Meet the PNMs</h2>
+  <div id="profilesGrid"></div>
+
   <h2>PNM Hometown Map</h2>
   <div id="map" style="height: 500px;"></div>
+
+  <h2>Find Your Twin</h2>
+  <div id="quiz">
+    <p>Favorite snack type?</p>
+    <select id="snack">
+      <option value="" disabled selected>Select...</option>
+      <option>Sweet</option>
+      <option>Salty</option>
+      <option>Both</option>
+      <option>Whatever is there</option>
+    </select>
+    <p>If there's free food, what are you?</p>
+    <select id="freeFood">
+      <option value="" disabled selected>Select...</option>
+      <option>First in line</option>
+      <option>Non chalant walk over</option>
+      <option>Take extra for later</option>
+      <option>Im not even that hungry</option>
+    </select>
+    <p>Favorite season?</p>
+    <select id="season">
+      <option value="" disabled selected>Select...</option>
+      <option>Summer</option>
+      <option>Winter</option>
+      <option>Fall</option>
+      <option>Spring</option>
+    </select>
+    <p>What is your lifestyle?</p>
+    <select id="lifestyle">
+      <option value="" disabled selected>Select...</option>
+      <option>Going Out</option>
+      <option>Staying In</option>
+      <option>Adventure / Exploring</option>
+    </select>
+    <p>How do you handle stress?</p>
+    <select id="stress">
+      <option value="" disabled selected>Select...</option>
+      <option>Gym / Activity</option>
+      <option>Sleep</option>
+      <option>Talk with friends or family</option>
+      <option>Lock in</option>
+    </select>
+    <p>Who or what is your biggest motivation?</p>
+    <select id="motivation">
+      <option value="" disabled selected>Select...</option>
+      <option>Success</option>
+      <option>Family</option>
+      <option>Fun / Experiences</option>
+      <option>Personal Growth</option>
+    </select>
+    <p>What describes you the most?</p>
+    <select id="personality">
+      <option value="" disabled selected>Select...</option>
+      <option>Loyal</option>
+      <option>Funny</option>
+      <option>Trustworthy</option>
+      <option>Ambitious</option>
+    </select>
+    <br><br>
+    <button onclick="findTwin()">Find My Twin</button>
+  </div>
+  <h3 id="result"></h3>
+
   <script src="pnmData.js"></script>
-  <script src="script.js"></script>
-
-  <img src="images/sample.jpg" alt="Sample Photo" width="200">
-
-  <button onclick="sayHello()">Click Me</button>
-
   <script src="script.js"></script>
 </body>
 </html>
-
-<!-- This part of the code is for the Twin section only of the website -->
-<h2>Find Your Twin</h2>
-
-<div id="quiz">
-
-  <p>Favorite snack type?</p>
-  <select id="snack">
-    <option>Sweet</option>
-    <option>Salty</option>
-    <option>Both</option>
-    <option>Whatever is there</option>
-  </select>
-
-  <p>If there's free food, what are you?</p>
-  <select id="freeFood">
-    <option>First in line</option>
-    <option>Non chalant walk over</option>
-    <option>Take extra for later</option>
-    <option>Im not even that hungry</option>
-  </select>
-
-  <p>Favorite season?</p>
-  <select id="season">
-    <option>Summer</option>
-    <option>Winter</option>
-    <option>Fall</option>
-    <option>Spring</option>
-  </select>
-
-  <p>What is your lifestyle?</p>
-  <select id="lifestyle">
-    <option>Going Out</option>
-    <option>Staying In</option>
-    <option>Adventure / Exploring</option>
-  </select>
-
-  <p>How do you handle stress?</p>
-  <select id="stress">
-    <option>Gym / Activity</option>
-    <option>Sleep</option>
-    <option>Talk with friends or family</option>
-    <option>Lock in</option>
-  </select>
-
-  <p>Who or what is your biggest motivation?</p>
-  <select id="motivation">
-    <option>Success</option>
-    <option>Family</option>
-    <option>Fun / Experiences</option>
-    <option>Personal Growth</option>
-  </select>
-
-  <p>What describes you the most?</p>
-  <select id="personality">
-    <option>Loyal</option>
-    <option>Funny</option>
-    <option>Trustworthy</option>
-    <option>Ambitious</option>
-
-  <br><br>
-  <button onclick="findTwin()">Find My Twin</button>
-</div>
-
-<h3 id="result"></h3>

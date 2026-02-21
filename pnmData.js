@@ -1,4 +1,4 @@
-const pnm = [
+const pnmData = [
   {
     name: "Lucas Cariquitan",
     hometown: {
@@ -334,7 +334,7 @@ const pnm = [
     major: "ECEN",
     gradYear: "2028",
     themeSong: "https://www.youtube.com/watch?v=4uFalk1y38I&list=RD4uFalk1y38I&start_radio=1",
-    image: "https://drive.google.com/file/d/1aKswoeKWfXlTReHfz3cvVVteBUaj7nnu/view?usp=sharing",
+    image: "images/jaden.png",
     favMusic: "Daniel Caesar/R&B",
     movie: "Everybody Hates Chris",
     surprise: "I've never been to a concert before",
@@ -374,7 +374,6 @@ const pnm = [
       stress: "Gym / Activity",
       motivation: "Family",
       personality: "Loyal"
+    }
   }
-  },
-  {
-]; //the ending of the code after all pnm are inserted
+];
