@@ -388,7 +388,7 @@ const pnmData = [
     major: "ECEN",
     gradYear: "2028",
     themeSong: "https://www.youtube.com/watch?v=pildU9lK6vM",
-    image: "images/jonathan_nguyen.png",
+    image: "",
     favMusic: "Travis Scott, Kendrick Lamar, Don Toliver",
     movie: "The Sandlot",
     surprise: "N/A",
@@ -401,6 +401,87 @@ const pnmData = [
       stress: "Gym / Activity",
       motivation: "Family",
       personality: "Loyal"
+    }
+  },
+
+  {
+    name: "Jonathan Nguyen",
+    hometown: {
+      city: "San Francisco, ",
+      state: "CA",
+      lat: 37.7749,
+      lng: -122.4194
+    },
+    major: "Civil Engineering",
+    gradYear: "2029",
+    themeSong: "https://www.youtube.com/watch?v=Q5nACsDOkNA",
+    image: "images/jonathan_nguyen.png",
+    favMusic: "Chainsmokers/WDM",
+    movie: "Beef",
+    surprise: "I can make my knees crack A LOT",
+
+    twinAnswers: {
+      snack: "Whatever is there",
+      freeFood: "Non chalant walk over",
+      season: "Spring",
+      lifestyle: "Adventure / Exploring",
+      stress: "Lock in",
+      motivation: "Family",
+      personality: "Loyal"
+    }
+  },
+
+  {
+    name: "Denys Stupakov",
+    hometown: {
+      city: "Portland, ",
+      state: "OR",
+      lat: 45.5152,
+      lng: -122.6784
+    },
+    major: "Gen",
+    gradYear: "2027",
+    themeSong: "https://www.youtube.com/watch?v=NdYWuo9OFAw",
+    image: "images/denys_stupakov.png",
+    favMusic: "Alternative Rock",
+    movie: "Whiplash",
+    surprise: "Milk",
+
+    twinAnswers: {
+      snack: "Sweet",
+      freeFood: "Non chalant walk over",
+      season: "Winter",
+      lifestyle: "Adventure / Exploring",
+      stress: "Gym / Activity",
+      motivation: "Fun / Experiences",
+      personality: "Funny"
+    }
+  },
+
+  {
+    name: "Catherine Eure",
+    hometown: {
+      city: "Denver, ",
+      state: "CO",
+      lat: 39.7392,
+      lng: -104.9903
+    },
+    major: "Electrical Engineering",
+    gradYear: "2029",
+    themeSong: "https://www.youtube.com/watch?v=kRZAk2rfESU",
+    image: "images/catherine_eure.png",
+    favMusic: "Folk",
+    movie: "The Princess Bride",
+    surprise: "I used to have a British accent.",
+
+    twinAnswers: {
+      snack: "Both",
+      freeFood: "Non chalant walk over",
+      season: "Summer",
+      lifestyle: "Going Out",
+      stress: "Talk with friends or family",
+      motivation: "Family",
+      personality: "Trustworthy"
     }
   }
 ];
