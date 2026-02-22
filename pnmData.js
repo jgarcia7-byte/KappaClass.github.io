@@ -360,7 +360,7 @@ const pnmData = [
     },
     major: "ECEN",
     gradYear: "2028",
-    themeSong: "https://www.youtube.com/watch?v=4uFalk1y38I&list=RD4uFalk1y38I&start_radio=1",
+    themeSong: "https://www.youtube.com/watch?v=C_29TAVQrm8",
     image: "images/jaden.png",
     favMusic: "Daniel Caesar/R&B",
     movie: "Everybody Hates Chris",
