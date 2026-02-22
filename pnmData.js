@@ -14,6 +14,7 @@ const pnmData = [
     favMusic: "Tyler the Creator",
     movie: "Spiderman Into the Spiderverse",
     surprise: "I gave a TED Talk that can be found on YouTube",
+    tedTalk: "https://www.youtube.com/watch?v=Vaz6kmSqCg8&t=15s",
 
     twinAnswers: {
       snack: "Sweet",
@@ -171,7 +172,7 @@ const pnmData = [
     },
     major: "CSEN",
     gradYear: "2028",
-    themeSong: "https://www.youtube.com/watch?v=VvfwWvH9x1M",
+    themeSong: "https://www.youtube.com/watch?v=RSsTx2TBrww&list=RDRSsTx2TBrww&start_radio=1",
     image: "images/sarah_gupte.png",
     favMusic: "Everything but metal",
     movie: "Mulan",
@@ -362,7 +363,7 @@ const pnmData = [
     gradYear: "2028",
     themeSong: "https://www.youtube.com/watch?v=C_29TAVQrm8",
     image: "images/jaden.png",
-    favMusic: "R&B and rap",
+    favMusic: "R&B/rap",
     movie: "Everybody Hates Chris",
     surprise: "I've never been to a concert before",
 
@@ -387,20 +388,20 @@ const pnmData = [
     },
     major: "ECEN",
     gradYear: "2028",
-    themeSong: "https://www.youtube.com/watch?v=Ct6BUPvE2sM",
-    image: " ",
+    themeSong: "https://www.youtube.com/watch?v=pildU9lK6vM",
+    image: "images/jonathan_garcia.png",
     favMusic: "Travis Scott, Kendrick Lamar, Don Toliver",
     movie: "The Sandlot",
-    surprise: "I've had blue hair before",
+    surprise: "N/A",
 
     twinAnswers: {
-      snack: "Salty",
+      snack: "Both",
       freeFood: "First in line",
       season: "Spring",
       lifestyle: "Adventure / Explore",
       stress: "Gym / Activity",
       motivation: "Family",
-      personality: "Funny"
+      personality: "Loyal"
     }
   },
 
@@ -459,33 +460,6 @@ const pnmData = [
   },
 
   {
-    name: "Keerthi Ramakuri",
-    hometown: {
-      city: "Fremont, ",
-      state: "CA",
-      lat: 37.55,
-      lng: 121.99
-    },
-    major: "ECEN",
-    gradYear: "2028",
-    themeSong: "https://www.youtube.com/watch?v=6iKuda2LL8c",
-    image: "",
-    favMusic: "R&B",
-    movie: "Spider Man No Way Home ",
-    surprise: "I sleep with my eyes half open",
-
-    twinAnswers: {
-      snack: "Salty",
-      freeFood: "Non chalant walk over",
-      season: "Summer",
-      lifestyle: "Adventure / Exploring",
-      stress: "Gym / Activity",
-      motivation: "Personal Growth",
-      personality: "Loyal"
-    }
-  },
-
-  {
     name: "Catherine Eure",
     hometown: {
       city: "Denver, ",
@@ -508,6 +482,33 @@ const pnmData = [
       lifestyle: "Going Out",
       stress: "Talk with friends or family",
       motivation: "Family",
+      personality: "Trustworthy"
+    }
+  },
+
+  {
+    name: "Keerthi Ramakuri",
+    hometown: {
+      city: "Fremont, ",
+      state: "CA",
+      lat: 37.5485,
+      lng: -121.9886
+    },
+    major: "ECEN",
+    gradYear: "2028",
+    themeSong: "https://www.youtube.com/watch?v=6iKuda2LL8c",
+    image: "images/keerthi_ramakuri.png",
+    favMusic: "R&B",
+    movie: "Spider Man No Way Home",
+    surprise: "I sleep with my eyes half open",
+
+    twinAnswers: {
+      snack: "Salty",
+      freeFood: "Non chalant walk over",
+      season: "Summer",
+      lifestyle: "Staying In",
+      stress: "Talk with friends or family",
+      motivation: "Personal Growth",
       personality: "Trustworthy"
     }
   }

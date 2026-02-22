@@ -87,6 +87,13 @@ function createProfileCard(pnm) {
             </button>
         </div>`;
     }
+    if (pnm.tedTalk) {
+        html += `<div class="profile-theme-song">
+            <button onclick="playThemeSong('TED Talk', '${pnm.tedTalk}')" class="play-btn">
+                Watch TED Talk
+            </button>
+        </div>`;
+    }
 
     card.innerHTML = html;
     return card;
