@@ -12,9 +12,20 @@ function initializeMap() {
     L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
         attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>'
     }).addTo(map);
+    const coordCount = {};
+    const offsetStep = 0.008;
     pnmData.forEach(pnm => {
         if (pnm.hometown && pnm.hometown.lat && pnm.hometown.lng) {
-            const marker = L.marker([pnm.hometown.lat, pnm.hometown.lng])
+            const lat = pnm.hometown.lat;
+            const lng = pnm.hometown.lng;
+            const key = lat.toFixed(4) + ',' + lng.toFixed(4);
+            const index = coordCount[key] = (coordCount[key] || 0);
+            coordCount[key]++;
+            const row = Math.floor(index / 3);
+            const col = index % 3;
+            const offsetLat = (row - 1) * offsetStep;
+            const offsetLng = (col - 1) * offsetStep;
+            const marker = L.marker([lat + offsetLat, lng + offsetLng])
                 .addTo(map)
                 .bindPopup(`<b>${pnm.name}</b><br>${pnm.hometown.city} ${pnm.hometown.state}`);
             markers.push(marker);
