@@ -171,7 +171,7 @@ const pnmData = [
     },
     major: "CSEN",
     gradYear: "2028",
-    themeSong: "https://www.youtube.com/watch?v=RSsTx2TBrww&list=RDRSsTx2TBrww&start_radio=1",
+    themeSong: "https://www.youtube.com/watch?v=VvfwWvH9x1M",
     image: "images/sarah_gupte.png",
     favMusic: "Everything but metal",
     movie: "Mulan",
@@ -387,20 +387,20 @@ const pnmData = [
     },
     major: "ECEN",
     gradYear: "2028",
-    themeSong: "https://www.youtube.com/watch?v=pildU9lK6vM",
-    image: "",
+    themeSong: "https://www.youtube.com/watch?v=Ct6BUPvE2sM",
+    image: " ",
     favMusic: "Travis Scott, Kendrick Lamar, Don Toliver",
     movie: "The Sandlot",
-    surprise: "N/A",
+    surprise: "I've had blue hair before",
 
     twinAnswers: {
-      snack: "Both",
+      snack: "Salty",
       freeFood: "First in line",
       season: "Spring",
       lifestyle: "Adventure / Explore",
       stress: "Gym / Activity",
       motivation: "Family",
-      personality: "Loyal"
+      personality: "Funny"
     }
   },
 
@@ -455,6 +455,33 @@ const pnmData = [
       stress: "Gym / Activity",
       motivation: "Fun / Experiences",
       personality: "Funny"
+    }
+  },
+
+  {
+    name: "Keerthi Ramakuri",
+    hometown: {
+      city: "Fremont, ",
+      state: "CA",
+      lat: 37.55,
+      lng: 121.99
+    },
+    major: "ECEN",
+    gradYear: "2028",
+    themeSong: "https://www.youtube.com/watch?v=6iKuda2LL8c",
+    image: "",
+    favMusic: "R&B",
+    movie: "Spider Man No Way Home ",
+    surprise: "I sleep with my eyes half open",
+
+    twinAnswers: {
+      snack: "Salty",
+      freeFood: "Non chalant walk over",
+      season: "Summer",
+      lifestyle: "Adventure / Exploring",
+      stress: "Gym / Activity",
+      motivation: "Personal Growth",
+      personality: "Loyal"
     }
   },
 
