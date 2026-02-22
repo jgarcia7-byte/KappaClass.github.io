@@ -69,6 +69,16 @@ function createProfileCard(pnm) {
         html += `<p class="profile-info"><strong>Graduation:</strong> ${pnm.gradYear}</p>`;
     }
 
+    if (pnm.favMusic) {
+        html += `<p class="profile-info"><strong>Favorite music artist/genre:</strong> ${pnm.favMusic}</p>`;
+    }
+    if (pnm.movie) {
+        html += `<p class="profile-info"><strong>Favorite movie/show:</strong> ${pnm.movie}</p>`;
+    }
+    if (pnm.surprise) {
+        html += `<p class="profile-info"><strong>Fun fact:</strong> ${pnm.surprise}</p>`;
+    }
+
     // Theme song
     if (pnm.themeSong) {
         html += `<div class="profile-theme-song">
