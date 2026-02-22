@@ -392,16 +392,16 @@ const pnmData = [
     image: "images/jonathan_garcia.png",
     favMusic: "Travis Scott, Kendrick Lamar, Don Toliver",
     movie: "The Sandlot",
-    surprise: "N/A",
+    surprise: "I've had blue hair before",
 
     twinAnswers: {
-      snack: "Both",
+      snack: "Salty",
       freeFood: "First in line",
       season: "Spring",
       lifestyle: "Adventure / Explore",
       stress: "Gym / Activity",
       motivation: "Family",
-      personality: "Loyal"
+      personality: "Funny"
     }
   },
 
