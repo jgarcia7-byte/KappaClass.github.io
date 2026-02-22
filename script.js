@@ -106,8 +106,7 @@ function findTwin() {
       bestMatch = pnm;
     }
   });
-  const loc = bestMatch.hometown ? bestMatch.hometown.city + " " + bestMatch.hometown.state : "";
-  document.getElementById("result").innerHTML = "Your Twin is <b>" + bestMatch.name + "</b>" + (loc ? " from " + loc : "") + ".";
+  document.getElementById("result").innerHTML = "Your Twin is <b>" + bestMatch.name + "</b>.";
 }
 
 function playThemeSong(name, url) {
