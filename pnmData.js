@@ -362,7 +362,7 @@ const pnmData = [
     gradYear: "2028",
     themeSong: "https://www.youtube.com/watch?v=C_29TAVQrm8",
     image: "images/jaden.png",
-    favMusic: "Daniel Caesar/R&B",
+    favMusic: "R&B and rap",
     movie: "Everybody Hates Chris",
     surprise: "I've never been to a concert before",
 
