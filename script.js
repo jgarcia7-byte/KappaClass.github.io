@@ -118,7 +118,11 @@ function findTwin() {
   const userAnswers = {
     snack: document.getElementById("snack").value,
     freeFood: document.getElementById("freeFood").value,
-    season: document.getElementById("season").value
+    season: document.getElementById("season").value,
+    lifestyle: document.getElementById("lifestyle").value,
+    stress: document.getElementById("stress").value,
+    motivation: document.getElementById("motivation").value,
+    personality: document.getElementById("personality").value
   };
 
   let bestMatch = null;
@@ -129,6 +133,10 @@ function findTwin() {
     if (pnm.twinAnswers.snack === userAnswers.snack) score++;
     if (pnm.twinAnswers.freeFood === userAnswers.freeFood) score++;
     if (pnm.twinAnswers.season === userAnswers.season) score++;
+    if (pnm.twinAnswers.lifestyle === userAnswers.lifestyle) score++;
+    if (pnm.twinAnswers.stress === userAnswers.stress) score++;
+    if (pnm.twinAnswers.motivation === userAnswers.motivation) score++;
+    if (pnm.twinAnswers.personality === userAnswers.personality) score++;
     if (score > highestScore) {
       highestScore = score;
       bestMatch = pnm;
