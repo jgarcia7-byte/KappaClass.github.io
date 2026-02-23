@@ -388,7 +388,7 @@ const pnmData = [
     },
     major: "ECEN",
     gradYear: "2028",
-    themeSong: "https://www.youtube.com/watch?v=pildU9lK6vM",
+    themeSong: "https://www.youtube.com/watch?v=Ct6BUPvE2sM",
     image: "images/jonathan_garcia.png",
     favMusic: "Travis Scott, Kendrick Lamar, Don Toliver",
     movie: "The Sandlot",
