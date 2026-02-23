@@ -511,5 +511,59 @@ const pnmData = [
       motivation: "Personal Growth",
       personality: "Trustworthy"
     }
+  },
+
+  {
+    name: "Jared Lee",
+    hometown: {
+      city: "Burlingame, ",
+      state: "CA",
+      lat: 37.5841,
+      lng: -122.3661
+    },
+    major: "Civil Engineering",
+    gradYear: "2029",
+    themeSong: "",
+    image: "images/jared_lee.png",
+    favMusic: "N/A",
+    movie: "N/A",
+    surprise: "N/A",
+
+    twinAnswers: {
+      snack: "Sweet",
+      freeFood: "First in line",
+      season: "Summer",
+      lifestyle: "Going Out",
+      stress: "Gym / Activity",
+      motivation: "Success",
+      personality: "Loyal"
+    }
+  },
+
+  {
+    name: "Hannah Whiting",
+    hometown: {
+      city: "Boston, ",
+      state: "MA",
+      lat: 42.3601,
+      lng: -71.0589
+    },
+    major: "MECH",
+    gradYear: "2029",
+    themeSong: "",
+    image: "images/hannah_whiting.png",
+    favMusic: "N/A",
+    movie: "N/A",
+    surprise: "N/A",
+
+    twinAnswers: {
+      snack: "Sweet",
+      freeFood: "First in line",
+      season: "Summer",
+      lifestyle: "Going Out",
+      stress: "Gym / Activity",
+      motivation: "Success",
+      personality: "Loyal"
+    }
   }
 ];
